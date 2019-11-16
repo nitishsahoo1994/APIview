@@ -19,10 +19,10 @@ from restapp import views
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-# url('api/$',views.EmployeeListCreateAPIView.as_view() ),
-# url('api/(?P<pk>\d+)',views.EmployeeRetrieveUpdateDestroyAPIView.as_view() ),
+url('api/$',views.EmployeeListCreateAPIView.as_view() ),
+url('api/(?P<pk>\d+)',views.EmployeeRetrieveUpdateDestroyAPIView.as_view() ),
 
-url(r'^api/$',views.EmployeeListCreateModelMixins.as_view() ),
-url(r'^api/(?P<pk>\d+)',views.EmployeeRetriveUpdateDestroyModelMixin.as_view() )
+# url(r'^api/$',views.EmployeeListCreateModelMixins.as_view() ),
+# url(r'^api/(?P<pk>\d+)',views.EmployeeRetriveUpdateDestroyModelMixin.as_view() )
 
 ]
